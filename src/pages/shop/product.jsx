@@ -24,7 +24,7 @@ export const Product = (props) => {
       onMouseLeave={() => setIsHovered(false)}
     >
       <div className="card my-3 mx-auto" style={cardStyle}>
-        <img src={productImage} className="card-img-top" alt="..." />
+        <img src={productImage} className="card-img-top mx-auto" alt="..." style={{maxHeight: "270px", maxWidth: "250px"}}/>
         <div className="card-body">
           <h5 className="card-title">{productName}</h5>
           <p className="card-text">${price}</p>
